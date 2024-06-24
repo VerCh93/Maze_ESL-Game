@@ -10,9 +10,9 @@ public interface ITask {
 
     boolean doTask() throws InterruptedException;
     public default String passMessage() { //message that appears when answer is correct
-        return "Success! You may continue...";
+        return "Success! You may continue...\n"; //prints message when answer task is correctly completed
     }
     public default String failMessage() { //message that appears when answer in wrong
-        return "You have failed. How disappointing...";
+        return "You have failed. How disappointing...\n"; //prints message when answer task is incorrectly completed
     }
 }
